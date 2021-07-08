@@ -10758,6 +10758,9 @@ body {
   padding: 0px;
   background: #131419 none repeat scroll 0% 0%;
 }
+body .view {
+  height: 100vh;
+}
 
 @media (max-width: 575.98px) {
   .header {
@@ -10808,7 +10811,7 @@ body {
     margin: 0;
     padding: 0;
     color: white !important;
-    margin-top: 7rem;
+    margin-top: calc(100vh / 3.5);
     padding-left: 3rem;
     position: relative;
   }
@@ -10900,7 +10903,7 @@ body {
   }
 }
 .buttons {
-  margin-top: 9rem;
+  margin-top: calc(100vh / 5);
   padding: 1.5rem;
 }
 .buttons .buttons-list {

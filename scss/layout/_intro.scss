@@ -10,7 +10,7 @@
     padding: 0;
 
     @include primary-textcolor;
-    margin-top: 7rem;
+    margin-top: calc(100vh / 3.5);
     padding-left: 3rem;
     position: relative;
 

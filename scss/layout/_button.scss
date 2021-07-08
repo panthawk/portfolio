@@ -3,7 +3,7 @@
 @use '../vendor/bootstrap' as *;
 
 .buttons {
-  margin-top: 9rem;
+  margin-top: calc(100vh / 5);
   padding: 1.5rem;
   .buttons-list {
     display: flex;
