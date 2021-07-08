@@ -8,12 +8,12 @@
   .my-intro {
     margin: 0;
     padding: 0;
-    padding-right: 1em;
+
     @include primary-textcolor;
-    margin-top: 6.2rem;
+    margin-top: 6.5rem;
     padding-left: 3rem;
     position: relative;
-    padding-right: 0.1rem;
+
     &__same1 {
       .intro-hello {
         margin: 0;
@@ -28,7 +28,7 @@
         }
         @media only screen and (max-width: 400px) {
           span {
-            font-size: 2rem;
+            font-size: 2.5rem;
           }
         }
       }
@@ -36,6 +36,7 @@
     &__same2 {
       position: absolute;
       top: 2rem;
+      width: 80%;
       @media only screen and (min-width: 400px) {
         top: 3rem;
       }
@@ -56,21 +57,23 @@
         }
         @media only screen and (max-width: 400px) {
           section {
-            font-size: 2rem;
+            font-size: 2.5rem;
           }
         }
       }
     }
     &__same3 {
+      margin: 0;
       position: absolute;
       top: 6.2rem;
+      left: 0px;
       @media only screen and (min-width: 400px) {
         top: 7.5rem;
       }
       .intro-tag {
         margin: 0;
         @include poppin-font;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.2rem;

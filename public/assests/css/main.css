@@ -10807,12 +10807,10 @@ body {
   .my-intro {
     margin: 0;
     padding: 0;
-    padding-right: 1em;
     color: white !important;
-    margin-top: 6.2rem;
+    margin-top: 6.5rem;
     padding-left: 3rem;
     position: relative;
-    padding-right: 0.1rem;
   }
   .my-intro__same1 .intro-hello {
     margin: 0;
@@ -10829,13 +10827,14 @@ body {
 }
 @media only screen and (max-width: 575.98px) and (max-width: 400px) {
   .my-intro__same1 .intro-hello span {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 575.98px) {
   .my-intro__same2 {
     position: absolute;
     top: 2rem;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 575.98px) and (min-width: 400px) {
@@ -10863,13 +10862,15 @@ body {
 }
 @media only screen and (max-width: 575.98px) and (max-width: 400px) {
   .my-intro__same2 .intro-name section {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 575.98px) {
   .my-intro__same3 {
+    margin: 0;
     position: absolute;
     top: 6.2rem;
+    left: 0px;
   }
 }
 @media only screen and (max-width: 575.98px) and (min-width: 400px) {
@@ -10881,7 +10882,7 @@ body {
   .my-intro__same3 .intro-tag {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2rem;
