@@ -11,6 +11,7 @@
 
     @include primary-textcolor;
     margin-top: 8rem;
+    padding-top: 1em;
     padding-left: 3rem;
     position: relative;
 
@@ -26,6 +27,7 @@
         span {
           font-size: 3rem;
         }
+        transition: scale(1.2);
         @media only screen and (max-width: 400px) {
           span {
             font-size: 2.5rem;
@@ -35,7 +37,7 @@
     }
     &__same2 {
       position: absolute;
-      top: 2rem;
+      top: 3.2rem;
       width: 80%;
       @media only screen and (min-width: 400px) {
         top: 3rem;
@@ -65,7 +67,7 @@
     &__same3 {
       margin: 0;
       position: absolute;
-      top: 6.5rem;
+      top: 8rem;
       left: 0px;
       @media only screen and (min-width: 400px) {
         top: 8rem;

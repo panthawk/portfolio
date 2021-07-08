@@ -10817,6 +10817,7 @@ body .view {
     padding: 0;
     color: white !important;
     margin-top: 8rem;
+    padding-top: 1em;
     padding-left: 3rem;
     position: relative;
   }
@@ -10828,6 +10829,7 @@ body .view {
     line-height: 3.375rem;
     letter-spacing: 0em;
     text-align: left;
+    transition: scale(1.2);
   }
   .my-intro__same1 .intro-hello span {
     font-size: 3rem;
@@ -10841,7 +10843,7 @@ body .view {
 @media (max-width: 575.98px) {
   .my-intro__same2 {
     position: absolute;
-    top: 2rem;
+    top: 3.2rem;
     width: 80%;
   }
 }
@@ -10877,7 +10879,7 @@ body .view {
   .my-intro__same3 {
     margin: 0;
     position: absolute;
-    top: 6.5rem;
+    top: 8rem;
     left: 0px;
   }
 }
@@ -10908,7 +10910,7 @@ body .view {
   }
 }
 .buttons {
-  margin-top: 10.2rem;
+  margin-top: 10rem;
   padding: 1.5rem;
 }
 .buttons .buttons-list {
@@ -10961,7 +10963,7 @@ body .view {
 }
 
 .jump-arrow {
-  margin-top: 8.5rem;
+  margin-top: 7rem;
   display: flex;
   justify-content: center;
 }
@@ -10983,6 +10985,50 @@ body .view {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.about--me {
+  margin: 0;
+  padding: 0;
+}
+.about--me .who-vector {
+  padding-left: 1rem;
+  padding-right: 0.1rem;
+  transform: scale(1.2);
+}
+.about--me .who {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: white !important;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0.8em;
+}
+.about--me .images-container {
+  margin-top: 1.8rem;
+  position: relative;
+}
+.about--me .images-container .image-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about--me .images-container .image-two {
+  position: absolute;
+  left: 70%;
+  transform: scale(1.2);
+}
+.about--me .text-container {
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+}
+.about--me .text-container .about-text {
+  padding: 1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
