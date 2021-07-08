@@ -3,7 +3,7 @@
 @use '../vendor/bootstrap' as *;
 
 .buttons {
-  margin-top: 8.1rem;
+  margin-top: 9rem;
   padding: 1.5rem;
   .buttons-list {
     display: flex;
@@ -36,7 +36,7 @@
       border: 2.5px solid #6166dc;
       border-radius: 61.7419319152832px;
       @include button-two;
-      padding: 0.5em 2em;
+      padding: 0.5em 2.1em;
       a {
         color: rgb(0, 0, 0) !important;
         text-decoration: none;

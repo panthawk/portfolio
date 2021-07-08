@@ -10808,7 +10808,7 @@ body {
     margin: 0;
     padding: 0;
     color: white !important;
-    margin-top: 6.5rem;
+    margin-top: 7rem;
     padding-left: 3rem;
     position: relative;
   }
@@ -10869,7 +10869,7 @@ body {
   .my-intro__same3 {
     margin: 0;
     position: absolute;
-    top: 6.2rem;
+    top: 6.5rem;
     left: 0px;
   }
 }
@@ -10900,7 +10900,7 @@ body {
   }
 }
 .buttons {
-  margin-top: 8.1rem;
+  margin-top: 9rem;
   padding: 1.5rem;
 }
 .buttons .buttons-list {
@@ -10934,7 +10934,7 @@ body {
   border: 2.5px solid #6166dc;
   border-radius: 61.7419319153px;
   background-image: linear-gradient(to right, #ffffff 100%, #e6e6e7 100%);
-  padding: 0.5em 2em;
+  padding: 0.5em 2.1em;
 }
 .buttons .buttons-list .button-two a {
   color: black !important;
@@ -10953,8 +10953,7 @@ body {
 }
 
 .jump-arrow {
-  margin-top: 5rem;
-  margin: 0 auto;
+  margin-top: 8rem;
   display: flex;
   justify-content: center;
 }
@@ -10963,6 +10962,7 @@ body {
   align-items: center;
   padding-top: 1.2em;
   padding-left: 0.02em;
+  width: 1rem;
   animation: bounce 3s infinite;
 }
 @keyframes bounce {
