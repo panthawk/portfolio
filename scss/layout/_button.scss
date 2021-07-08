@@ -3,7 +3,7 @@
 @use '../vendor/bootstrap' as *;
 
 .buttons {
-  margin-top: calc(100vh / 5);
+  margin-top: 10vh;
   padding: 1.5rem;
   .buttons-list {
     display: flex;
@@ -23,7 +23,7 @@
         order: none !important;
         span {
           @include poppin-font;
-          font-size: 0.8rem;
+          font-size: calc(0.8rem+2vh);
           font-style: normal;
           font-weight: 400;
           line-height: 1.25rem;
@@ -36,7 +36,7 @@
       border: 2.5px solid #6166dc;
       border-radius: 61.7419319152832px;
       @include button-two;
-      padding: 0.5em 2.1em;
+      padding: 0.5em 2em;
       a {
         color: rgb(0, 0, 0) !important;
         text-decoration: none;
@@ -44,7 +44,7 @@
         border: none !important;
         span {
           @include poppin-font;
-          font-size: 0.8rem;
+          font-size: calc(0.8rem+2vh);
           font-style: normal;
           font-weight: 400;
           line-height: 1.25rem;

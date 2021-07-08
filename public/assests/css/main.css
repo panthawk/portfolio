@@ -10757,9 +10757,10 @@ body {
   margin: 0px;
   padding: 0px;
   background: #131419 none repeat scroll 0% 0%;
+  height: 100vh;
 }
 body .view {
-  height: 100vh;
+  height: 100%;
 }
 
 @media (max-width: 575.98px) {
@@ -10811,7 +10812,7 @@ body .view {
     margin: 0;
     padding: 0;
     color: white !important;
-    margin-top: calc(100vh / 3.5);
+    margin-top: 7rem;
     padding-left: 3rem;
     position: relative;
   }
@@ -10872,7 +10873,7 @@ body .view {
   .my-intro__same3 {
     margin: 0;
     position: absolute;
-    top: 6.5rem;
+    top: 6.2rem;
     left: 0px;
   }
 }
@@ -10903,7 +10904,7 @@ body .view {
   }
 }
 .buttons {
-  margin-top: calc(100vh / 5);
+  margin-top: 10vh;
   padding: 1.5rem;
 }
 .buttons .buttons-list {
@@ -10926,7 +10927,7 @@ body .view {
 }
 .buttons .buttons-list .button-one a span {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem+2vh);
   font-style: normal;
   font-weight: 400;
   line-height: 1.25rem;
@@ -10937,7 +10938,7 @@ body .view {
   border: 2.5px solid #6166dc;
   border-radius: 61.7419319153px;
   background-image: linear-gradient(to right, #ffffff 100%, #e6e6e7 100%);
-  padding: 0.5em 2.1em;
+  padding: 0.5em 2em;
 }
 .buttons .buttons-list .button-two a {
   color: black !important;
@@ -10947,7 +10948,7 @@ body .view {
 }
 .buttons .buttons-list .button-two a span {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: calc(0.8rem+2vh);
   font-style: normal;
   font-weight: 400;
   line-height: 1.25rem;
@@ -10956,7 +10957,7 @@ body .view {
 }
 
 .jump-arrow {
-  margin-top: 8rem;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
 }
