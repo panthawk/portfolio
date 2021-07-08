@@ -1,0 +1,14 @@
+// header gradient background
+
+@mixin button-one {
+  background: linear-gradient(
+    90deg,
+    rgba(97, 102, 220, 0.4) -9.89%,
+    #6166dc -9.88%,
+    #3850a7 112.66%
+  );
+}
+
+@mixin button-two {
+  background-image: linear-gradient(to right, #ffffff 100%, #e6e6e7 100%);
+}

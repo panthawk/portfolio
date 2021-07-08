@@ -1,0 +1,20 @@
+{
+  "name": "panthwk-portfoio",
+  "version": "1.0.0",
+  "description": "my personal website to show case my skills",
+  "private": true,
+  "scripts": {
+    "compile:sass":"sass --watch scss:assests/css"
+  },
+  "author": "panthwak",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "lodash": "^4.17.21",
+    "sass": "^1.35.1"
+  }
+}

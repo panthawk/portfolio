@@ -1,0 +1,57 @@
+@use '../components/gradient' as *;
+@use '../abstracts/variables' as *;
+@use '../vendor/bootstrap' as *;
+
+.buttons {
+  margin-top: 8.1rem;
+  padding: 1.5rem;
+  .buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    .button-one {
+      border-radius: 61.7419319152832px;
+      @include button-one;
+      padding: 0.5em 1.8em;
+      a {
+        color: white !important;
+        text-decoration: none;
+        cursor: pointer;
+        order: none !important;
+        span {
+          @include poppin-font;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.25rem;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+    .button-two {
+      border: 2.5px solid #6166dc;
+      border-radius: 61.7419319152832px;
+      @include button-two;
+      padding: 0.5em 2em;
+      a {
+        color: rgb(0, 0, 0) !important;
+        text-decoration: none;
+        cursor: pointer;
+        border: none !important;
+        span {
+          @include poppin-font;
+          font-size: 0.8rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.25rem;
+          letter-spacing: 0em;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@use '../components/gradient' as *;
+@use '../abstracts/variables' as *;
+@use '../vendor/bootstrap' as *;
+
+// for mobile browsers
+
+@include media-breakpoint-down(sm) {
+  .my-intro {
+    margin: 0;
+    padding: 0;
+    padding-right: 1em;
+    @include primary-textcolor;
+    margin-top: 6.2rem;
+    padding-left: 3rem;
+    position: relative;
+    padding-right: 0.1rem;
+    &__same1 {
+      .intro-hello {
+        margin: 0;
+        @include poppin-font;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.375rem;
+        letter-spacing: 0em;
+        text-align: left;
+        span {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: 400px) {
+          span {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    &__same2 {
+      position: absolute;
+      top: 2rem;
+      @media only screen and (min-width: 400px) {
+        top: 3rem;
+      }
+      .intro-name {
+        margin: 0;
+        @include poppin-font;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.3125rem;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: capitalize;
+        .intro-name-md {
+          padding-right: 0.2em;
+        }
+        section {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: 400px) {
+          section {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    &__same3 {
+      position: absolute;
+      top: 6.2rem;
+      @media only screen and (min-width: 400px) {
+        top: 7.5rem;
+      }
+      .intro-tag {
+        margin: 0;
+        @include poppin-font;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2rem;
+        letter-spacing: 0em;
+        section {
+          text-align: center;
+          justify-content: center;
+          margin: 0 auto;
+        }
+        @media only screen and (min-width: 400px) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

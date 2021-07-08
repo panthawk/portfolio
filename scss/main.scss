@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// useing vendors
+
+@use "./vendor/bootstrap";
+
+// useing themes
+
+@use "./themes/main";
+
+// useing abstracts
+
+@use "./abstracts/variables";
+
+// useing base
+
+// useing components
+
+@use "./components/gradient";
+
+// useing pages
+
+// useing layouts
+
+@use "./layout/header";
+@use "./layout/intro";
+@use "./layout/button";
+@use "./layout/jump-arrow";
