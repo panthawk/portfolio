@@ -4,7 +4,7 @@
   "description": "my personal website to show case my skills",
   "scripts": {
     "compile:sass":"sass --watch scss:assests/css",
-    "build":"npm install"
+    "build":"npm install && sass scss:assests/css"
   },
   "author": "panthwak",
   "license": "ISC",
