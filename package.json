@@ -2,9 +2,10 @@
   "name": "panthwk-portfoio",
   "version": "1.0.0",
   "description": "my personal website to show case my skills",
+  "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss:assests/css",
-    "build": "npm install bootstrap"
+    "start": "node index.js"
   },
   "author": "panthwak",
   "license": "ISC",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
     "lodash": "^4.17.21",
     "sass": "^1.35.1"
   }
