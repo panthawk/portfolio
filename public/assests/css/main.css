@@ -10807,7 +10807,7 @@ body .view {
 }
 @media only screen and (max-width: 575.98px) and (max-width: 400px) {
   .nav .nav-head__list .list-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0.3em;
   }
 }
@@ -10816,7 +10816,7 @@ body .view {
     margin: 0;
     padding: 0;
     color: white !important;
-    margin-top: 7rem;
+    margin-top: 8rem;
     padding-left: 3rem;
     position: relative;
   }
@@ -10908,7 +10908,7 @@ body .view {
   }
 }
 .buttons {
-  margin-top: 10rem;
+  margin-top: 10.2rem;
   padding: 1.5rem;
 }
 .buttons .buttons-list {
