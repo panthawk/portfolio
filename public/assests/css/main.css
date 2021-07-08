@@ -10772,7 +10772,11 @@ body .view {
     margin: 0;
   }
   .header__head {
+    max-width: 550px;
+    width: 100%;
     text-align: center;
+    padding: 0 2rem;
+    transform: scale(1.2);
   }
 
   .nav {
@@ -10873,13 +10877,13 @@ body .view {
   .my-intro__same3 {
     margin: 0;
     position: absolute;
-    top: 6.2rem;
+    top: 6.5rem;
     left: 0px;
   }
 }
 @media only screen and (max-width: 575.98px) and (min-width: 400px) {
   .my-intro__same3 {
-    top: 7.5rem;
+    top: 8rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -10904,7 +10908,7 @@ body .view {
   }
 }
 .buttons {
-  margin-top: 10vh;
+  margin-top: 10rem;
   padding: 1.5rem;
 }
 .buttons .buttons-list {
@@ -10957,7 +10961,7 @@ body .view {
 }
 
 .jump-arrow {
-  margin-top: 10vh;
+  margin-top: 8.5rem;
   display: flex;
   justify-content: center;
 }
