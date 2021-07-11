@@ -1,0 +1,37 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+//name itro animation
+
+.names {
+  p {
+    position: relative;
+    width: max-content;
+    &::after,
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    &::before {
+      background: rgb(19, 20, 21);
+      animation: type 4s steps(18) forwards;
+    }
+
+    &::after {
+      width: 0.0125em;
+      background: white;
+      animation: type 4s steps(18) forwards;
+    }
+  }
+}
+
+@keyframes type {
+  to {
+    left: 100%;
+  }
+}

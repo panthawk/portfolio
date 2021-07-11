@@ -10746,174 +10746,182 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
+.hero-section {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
-  background: #131419 none repeat scroll 0% 0%;
-  height: 100vh;
-}
-body .view {
-  height: 100%;
 }
 
-@media (max-width: 575.98px) {
-  .header {
-    margin: 0;
-    margin-top: 1.9375rem;
-  }
-  .header__row1 {
-    margin: 0;
-  }
-  .header__head {
-    max-width: 550px;
-    width: 100%;
-    text-align: center;
-    padding: 0 2rem;
-    transform: scale(1.2);
-  }
-
-  .nav {
-    margin: 0;
-    color: white !important;
-    margin-top: 1.5em;
-  }
-  .nav .nav-head__list {
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-  }
-  .nav .nav-head__list .list-link {
-    list-style: none;
-    font-family: "Poppins", sans-serif;
-    padding: 0.32em;
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem;
-    letter-spacing: 0em;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.header-resize {
+  padding-top: 1rem;
 }
-@media only screen and (max-width: 575.98px) and (max-width: 400px) {
-  .nav .nav-head__list .list-link {
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "Zilla Slab", serif;
+  background: #dc2424;
+  background: -webkit-linear-gradient(to right, #4a569d, #dc2424);
+  background: linear-gradient(to right, #4a569d, #dc2424);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-space {
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+
+.navbar__size {
+  padding: 0;
+}
+.navbar__size .list-link {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0.32em;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 400px) {
+  .navbar__size .list-link {
     font-size: 1rem;
     padding: 0.3em;
   }
 }
-@media (max-width: 575.98px) {
-  .my-intro {
-    margin: 0;
-    padding: 0;
-    color: white !important;
-    margin-top: 8rem;
-    padding-top: 1em;
-    padding-left: 3rem;
-    position: relative;
-  }
-  .my-intro__same1 .intro-hello {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.375rem;
-    letter-spacing: 0em;
-    text-align: left;
-    transition: scale(1.2);
-  }
-  .my-intro__same1 .intro-hello span {
-    font-size: 3rem;
-  }
+.navbar__size .list-link a {
+  color: white !important;
+  text-decoration: none;
 }
-@media only screen and (max-width: 575.98px) and (max-width: 400px) {
-  .my-intro__same1 .intro-hello span {
-    font-size: 2.5rem;
-  }
+
+.navbar__size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
 }
-@media (max-width: 575.98px) {
-  .my-intro__same2 {
-    position: absolute;
-    top: 3.2rem;
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 575.98px) and (min-width: 400px) {
-  .my-intro__same2 {
-    top: 3rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .my-intro__same2 .intro-name {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 4.3125rem;
-    letter-spacing: 0em;
-    text-align: left;
-    text-transform: capitalize;
-  }
-  .my-intro__same2 .intro-name .intro-name-md {
-    padding-right: 0.2em;
-  }
-  .my-intro__same2 .intro-name section {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 575.98px) and (max-width: 400px) {
-  .my-intro__same2 .intro-name section {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .my-intro__same3 {
-    margin: 0;
-    position: absolute;
-    top: 8rem;
-    left: 0px;
-  }
-}
-@media only screen and (max-width: 575.98px) and (min-width: 400px) {
-  .my-intro__same3 {
-    top: 8rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .my-intro__same3 .intro-tag {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.85rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2rem;
-    letter-spacing: 0em;
-  }
-  .my-intro__same3 .intro-tag section {
-    text-align: center;
-    justify-content: center;
+
+@media only screen and (max-width: 576px) {
+  .nav-logo {
     margin: 0 auto;
+    text-align: center;
+  }
+
+  body {
+    background: #131419 none repeat scroll 0% 0%;
   }
 }
-@media only screen and (max-width: 575.98px) and (min-width: 400px) {
-  .my-intro__same3 .intro-tag {
-    font-size: 1rem;
+@media only screen and (min-width: 992px) {
+  .nav-space {
+    display: none;
   }
 }
-.buttons {
-  margin-top: 10rem;
-  padding: 1.5rem;
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .hero-section {
+    background-image: url("../../images/sm-bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-section {
+    background-image: url("../../images/big-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-section {
+    background-image: url("../../images/md-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+#intro {
+  margin: 0 auto;
+  padding: 0;
+}
+#intro .intro-dots {
+  padding-top: 5rem;
+}
+#intro .intro-dots > span {
+  margin-top: 0.8rem;
+}
+#intro .intro-dots .dots {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white !important;
+}
+@media only screen and (min-width: 0) and (max-width: 992px) {
+  #intro .intro-dots {
+    display: none;
+  }
+}
+#intro .intro-name {
+  margin: 0 auto;
+  color: white !important;
+}
+#intro .intro-name .names {
+  line-height: 1.2;
+}
+@media only screen and (min-width: 992px) {
+  #intro .intro-name .names .name-none {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) {
+  #intro .names span {
+    font-size: calc(3rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+}
+@media screen and (min-width: 768px) {
+  #intro .names span {
+    font-size: calc(4.6rem + 0.8 * ((100vw - 40rem) / 60));
+  }
+}
+@media screen and (min-width: 992px) {
+  #intro .names span {
+    font-size: calc(6rem + 0.8 * ((100vw - 60rem) / 60));
+  }
+}
+@media screen and (min-width: 1300px) {
+  #intro .names span {
+    font-size: calc(7.375rem + 0.8 * ((100vw - 60rem) / 60));
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #intro {
+    margin-top: 7.2%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  #intro {
+    margin-top: 30%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .name-tag {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+  }
+}
+@media screen and (min-width: 1280px) {
+  .name-tag {
+    font-size: 22px;
+  }
 }
 .buttons .buttons-list {
+  max-width: 576px;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -10962,73 +10970,43 @@ body .view {
   text-align: center;
 }
 
-.jump-arrow {
-  margin-top: 7rem;
-  display: flex;
-  justify-content: center;
+@media only screen and (min-width: 992px) {
+  .buttons {
+    margin-top: 12%;
+    padding-bottom: 2.5%;
+  }
 }
-.jump-arrow img {
-  margin: 0 auto;
-  align-items: center;
-  padding-top: 1.2em;
-  padding-left: 0.02em;
-  width: 1rem;
-  animation: bounce 3s infinite;
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  .buttons {
+    margin-top: 20%;
+  }
 }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+.names p {
+  position: relative;
+  width: max-content;
+}
+.names p::after, .names p::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.names p::before {
+  background: #131415;
+  animation: type 4s steps(18) forwards;
+}
+.names p::after {
+  width: 0.0125em;
+  background: white;
+  animation: type 4s steps(18) forwards;
 }
 
-.about--me {
-  margin: 0;
-  padding: 0;
-}
-.about--me .who-vector {
-  padding-left: 1rem;
-  padding-right: 0.1rem;
-  transform: scale(1.2);
-}
-.about--me .who {
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: white !important;
-  font-size: 1.1rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6875rem;
-  letter-spacing: 0em;
-  text-align: left;
-  padding: 0.8em;
-}
-.about--me .images-container {
-  margin-top: 1.8rem;
-  position: relative;
-}
-.about--me .images-container .image-one {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.about--me .images-container .image-two {
-  position: absolute;
-  left: 70%;
-  transform: scale(1.2);
-}
-.about--me .text-container {
-  margin: 0;
-  padding: 0;
-  margin-top: 2rem;
-}
-.about--me .text-container .about-text {
-  padding: 1.5em;
+@keyframes type {
+  to {
+    left: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+// head gradient
+@mixin display-gradient {
+  background: #dc2424;
+  background: -webkit-linear-gradient(to right, #4a569d, #dc2424);
+  background: linear-gradient(to right, #4a569d, #dc2424);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin header-font {
+  font-family: "Zilla Slab", serif;
+}
+
+@mixin poppin-font {
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin name-font {
+  font-family: "Source Code Pro", monospace;
+}
+
+@mixin primary-textcolor {
+  color: white !important;
+}
+
+@mixin button-one {
+  background: linear-gradient(
+    90deg,
+    rgba(97, 102, 220, 0.4) -9.89%,
+    #6166dc -9.88%,
+    #3850a7 112.66%
+  );
+}
+
+@mixin button-two {
+  background-image: linear-gradient(to right, #ffffff 100%, #e6e6e7 100%);
+}

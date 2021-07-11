@@ -1,0 +1,93 @@
+@use '../abstracts/mixins' as *;
+
+.hero-section {
+  width: 100%;
+}
+
+.header-resize {
+  padding-top: 1rem;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 2rem;
+  @include header-font;
+  @include display-gradient;
+}
+.nav-space {
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+
+.navbar__size {
+  padding: 0;
+  .list-link {
+    list-style: none;
+    @include poppin-font;
+    padding: 0.32em;
+    font-size: 1.1rem;
+    font-style: normal;
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
+      padding: 0.3em;
+    }
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    a {
+      @include primary-textcolor;
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar__size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 576px) {
+  .nav-logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  body {
+    background: rgb(19, 20, 25) none repeat scroll 0% 0%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-space {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .hero-section {
+    background-image: url("../../images/sm-bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero-section {
+    background-image: url("../../images/big-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero-section {
+    background-image: url("../../images/md-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,94 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+#intro {
+  margin: 0 auto;
+  padding: 0;
+  .intro-dots {
+    padding-top: 5rem;
+    > span {
+      margin-top: 0.8rem;
+    }
+    .dots {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $text-color;
+    }
+    @media only screen and (min-width: 0) and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .intro-name {
+    margin: 0 auto;
+    color: $text-color;
+    .names {
+      line-height: 1.2;
+      .name-none {
+        @media only screen and (min-width: 992px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    .names {
+      span {
+        font-size: calc(3rem + 0.5 * ((100vw - 20rem) / 60));
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .names {
+      span {
+        font-size: calc(4.6rem + 0.8 * ((100vw - 40rem) / 60));
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .names {
+      span {
+        font-size: calc(6rem + 0.8 * ((100vw - 60rem) / 60));
+      }
+    }
+  }
+  @media screen and (min-width: 1300px) {
+    .names {
+      span {
+        font-size: calc(7.375rem + 0.8 * ((100vw - 60rem) / 60));
+      }
+    }
+  }
+}
+
+// resisign margins
+
+@media only screen and (min-width: 992px) {
+  #intro {
+    margin-top: 7.2%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  #intro {
+    margin-top: 30%;
+  }
+}
+
+// name tag
+
+@media screen and (min-width: 320px) {
+  .name-tag {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .name-tag {
+    font-size: 22px;
+  }
+}

@@ -1,17 +1,15 @@
-@use '../components/gradient' as *;
+@use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
-@use '../vendor/bootstrap' as *;
 
 .buttons {
-  margin-top: 10rem;
-  padding: 1.5rem;
   .buttons-list {
+    max-width: 576px;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-
     .button-one {
       border-radius: 61.7419319152832px;
       @include button-one;
@@ -53,5 +51,18 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .buttons {
+    margin-top: 12%;
+    padding-bottom: 2.5%;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  .buttons {
+    margin-top: 20%;
   }
 }

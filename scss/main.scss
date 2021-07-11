@@ -1,29 +1,18 @@
-@charset "UTF-8";
+// bootstrap
 
-// useing vendors
+@use './vendors/bootstrap';
 
-@use "./vendor/bootstrap";
+// layouts
 
-// useing themes
+@use './layouts/navbar';
+@use './layouts/intro';
+@use './layouts/buttons';
 
-@use "./themes/main";
+// abstracts
 
-// useing abstracts
+@use './abstracts/mixins';
+@use './abstracts/variables';
 
-@use "./abstracts/variables";
+// animations
 
-// useing base
-
-// useing components
-
-@use "./components/gradient";
-
-// useing pages
-
-// useing layouts
-
-@use "./layout/header";
-@use "./layout/intro";
-@use "./layout/button";
-@use "./layout/jump-arrow";
-@use "./layout/image";
+@use './animations/name';
