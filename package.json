@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss:assests/css"
+    "compile:sass": "sass --watch scss:public/assests/css",
+    "start":"node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/panthawk/portfolio#readme",
   "dependencies": {
     "bootstrap": "^5.0.2",
+    "express": "^4.17.1",
     "sass": "^1.35.2"
   }
 }

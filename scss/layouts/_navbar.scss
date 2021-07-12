@@ -68,7 +68,7 @@
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .hero-section {
-    background-image: url("../../images/sm-bg1.jpg");
+    background-image: url("./images/sm-bg1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@
 
 @media only screen and (min-width: 992px) {
   .hero-section {
-    background-image: url("../../images/big-bg.svg");
+    background-image: url("./images/big-bg.svg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .hero-section {
-    background-image: url("../../images/md-bg.svg");
+    background-image: url("./images/md-bg.svg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
