@@ -4,7 +4,7 @@
 //name itro animation
 
 .names {
-  p {
+  .one {
     position: relative;
     width: max-content;
     &::after,
@@ -18,20 +18,39 @@
     }
 
     &::before {
-      background: rgb(19, 20, 21);
-      animation: type 4s steps(18) forwards;
+      background: #131419;
+      animation: type 4s steps(5) 1s forwards;
     }
 
     &::after {
-      width: 0.0125em;
+      content: "";
+      width: 0.1rem;
       background: white;
-      animation: type 4s steps(18) forwards;
+      animation: type 4s steps(5) 1s forwards, blink 750ms steps(5) infinite;
     }
+  }
+  .two {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fade 2s ease 7s forwards;
   }
 }
 
 @keyframes type {
   to {
     left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

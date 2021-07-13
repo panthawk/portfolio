@@ -10877,6 +10877,8 @@ textarea.form-control-lg {
 }
 #intro .intro-name .names {
   line-height: 1.2;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
 }
 @media only screen and (min-width: 992px) {
   #intro .intro-name .names .name-none {
@@ -10885,7 +10887,7 @@ textarea.form-control-lg {
 }
 @media screen and (min-width: 320px) {
   #intro .names span {
-    font-size: calc(3rem + 0.5 * ((100vw - 20rem) / 60));
+    font-size: calc(2.5rem + 0.5 * ((100vw - 20rem) / 60));
   }
 }
 @media screen and (min-width: 768px) {
@@ -11307,11 +11309,11 @@ li {
     font-size: 2rem;
   }
 }
-.names p {
+.names .one {
   position: relative;
   width: max-content;
 }
-.names p::after, .names p::before {
+.names .one::after, .names .one::before {
   content: "";
   top: 0;
   left: 0;
@@ -11319,19 +11321,36 @@ li {
   right: 0;
   position: absolute;
 }
-.names p::before {
-  background: #131415;
-  animation: type 4s steps(18) forwards;
+.names .one::before {
+  background: #131419;
+  animation: type 4s steps(5) 1s forwards;
 }
-.names p::after {
-  width: 0.0125em;
+.names .one::after {
+  content: "";
+  width: 0.1rem;
   background: white;
-  animation: type 4s steps(18) forwards;
+  animation: type 4s steps(5) 1s forwards, blink 750ms steps(5) infinite;
+}
+.names .two {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fade 2s ease 7s forwards;
 }
 
 @keyframes type {
   to {
     left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .about--me {

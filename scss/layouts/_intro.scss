@@ -26,6 +26,8 @@
     color: $text-color;
     .names {
       line-height: 1.2;
+      font-family: "Source Code Pro", monospace;
+      font-weight: 400;
       .name-none {
         @media only screen and (min-width: 992px) {
           display: none;
@@ -37,7 +39,7 @@
   @media screen and (min-width: 320px) {
     .names {
       span {
-        font-size: calc(3rem + 0.5 * ((100vw - 20rem) / 60));
+        font-size: calc(2.5rem + 0.5 * ((100vw - 20rem) / 60));
       }
     }
   }
