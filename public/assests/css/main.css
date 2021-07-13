@@ -11279,7 +11279,7 @@ li {
   font-family: "Poppins", sans-serif;
 }
 .skill .tool ul > li {
-  padding-left: 0.2rem;
+  padding: 0.2rem;
 }
 
 @media only screen and (min-width: 320px) {
