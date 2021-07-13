@@ -32,6 +32,9 @@
       text-transform: uppercase;
       @include poppin-font;
     }
+    ul > li {
+      padding: 0.2rem;
+    }
   }
   .front {
     margin-top: 2rem;
@@ -40,6 +43,9 @@
       margin-bottom: 1.3rem;
       text-transform: uppercase;
       @include poppin-font;
+    }
+    ul > li {
+      padding-left: 0.2rem;
     }
   }
   .back {
@@ -50,6 +56,9 @@
       text-transform: uppercase;
       @include poppin-font;
     }
+    ul > li {
+      padding: 0.1rem;
+    }
   }
   .tool {
     margin-top: 2rem;
@@ -58,6 +67,9 @@
       margin-bottom: 1.3rem;
       text-transform: uppercase;
       @include poppin-font;
+    }
+    ul > li {
+      padding-left: 0.2rem;
     }
   }
 }

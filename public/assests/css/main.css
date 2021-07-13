@@ -11136,7 +11136,6 @@ li {
 .about .about__head span {
   margin-top: 0.1rem;
   color: white !important;
-  font-size: calc(1.3rem + 0.8 * ((100vw - 60rem) / 60));
   text-transform: uppercase;
 }
 .about .about__resize {
@@ -11159,7 +11158,6 @@ li {
 }
 .about .text-container p {
   margin: 0 auto;
-  font-size: calc(1.2rem + 0.8 * ((100vw - 60rem) / 60));
   width: 90%;
   font-family: "Roboto", sans-serif;
 }
@@ -11201,6 +11199,20 @@ li {
     margin-top: 1.25rem;
   }
 }
+@media only screen and (min-width: 320px) {
+  .about__head span {
+    font-size: calc(1.2rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+
+  .text-container p {
+    font-size: calc(0.9rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about__head span {
+    font-size: 2rem;
+  }
+}
 .skill {
   color: white !important;
   text-align: center;
@@ -11230,6 +11242,9 @@ li {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
+.skill .lang ul > li {
+  padding: 0.2rem;
+}
 .skill .front {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -11238,6 +11253,9 @@ li {
   margin-bottom: 1.3rem;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+}
+.skill .front ul > li {
+  padding-left: 0.2rem;
 }
 .skill .back {
   margin-top: 2rem;
@@ -11248,6 +11266,9 @@ li {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
+.skill .back ul > li {
+  padding: 0.1rem;
+}
 .skill .tool {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -11256,6 +11277,9 @@ li {
   margin-bottom: 1.3rem;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+}
+.skill .tool ul > li {
+  padding-left: 0.2rem;
 }
 
 @media only screen and (min-width: 320px) {
