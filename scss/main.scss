@@ -7,12 +7,22 @@
 @use './layouts/navbar';
 @use './layouts/intro';
 @use './layouts/buttons';
+@use './layouts/carosuel';
+@use './layouts/aboutme';
+@use './layouts/skillme';
 
 // abstracts
 
 @use './abstracts/mixins';
 @use './abstracts/variables';
+@use './abstracts/flexs';
+@use './abstracts/global';
 
 // animations
 
 @use './animations/name';
+
+// pages
+
+@use './pages/about';
+@use './pages/skill';

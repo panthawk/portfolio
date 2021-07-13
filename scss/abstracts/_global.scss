@@ -11,6 +11,7 @@ html {
 
 body {
   background-color: #131419;
+  text-shadow: 0, 0, 1px white;
 }
 
 h1,
@@ -20,4 +21,29 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+// flex
+.flex {
+  display: flex;
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-w {
+    flex-wrap: wrap;
+  }
 }

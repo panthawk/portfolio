@@ -1,0 +1,12 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.skill {
+  margin-top: 8rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .skill {
+    margin-top: 10rem;
+  }
+}

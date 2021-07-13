@@ -20,6 +20,10 @@
   font-family: "Source Code Pro", monospace;
 }
 
+@mixin para-font {
+  font-family: "Roboto", sans-serif;
+}
+
 @mixin primary-textcolor {
   color: white !important;
 }

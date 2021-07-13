@@ -3,17 +3,16 @@
 
 .buttons {
   .buttons-list {
-    max-width: 576px;
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     .button-one {
       border-radius: 61.7419319152832px;
       @include button-one;
       padding: 0.5em 1.8em;
+      margin-right: 20px;
       a {
         color: white !important;
         text-decoration: none;
@@ -64,5 +63,19 @@
 @media only screen and (min-width: 300px) and (max-width: 576px) {
   .buttons {
     margin-top: 20%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .buttons {
+    margin-top: 16%;
+    margin-left: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .buttons {
+    margin-top: 10%;
+    .buttons-list {
+      justify-content: flex-start;
+    }
   }
 }
