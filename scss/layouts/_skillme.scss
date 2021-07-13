@@ -3,11 +3,14 @@
 @use '../abstracts/global' as *;
 
 .skill {
+  color: $text-color;
+  text-align: center;
   .skill__head {
+    text-align: left;
+    padding-bottom: 5rem;
     span {
       margin-top: 0.1rem;
       color: $text-color;
-      font-size: calc(1.3rem + 0.8 * ((100vw - 60rem) / 60));
       text-transform: uppercase;
     }
   }
@@ -19,6 +22,76 @@
   .tool {
     .flex {
       gap: 15px;
+    }
+  }
+  .lang {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    span:first-child {
+      margin-bottom: 1.3rem;
+      text-transform: uppercase;
+      @include poppin-font;
+    }
+  }
+  .front {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    span:first-child {
+      margin-bottom: 1.3rem;
+      text-transform: uppercase;
+      @include poppin-font;
+    }
+  }
+  .back {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    span:first-child {
+      margin-bottom: 1.3rem;
+      text-transform: uppercase;
+      @include poppin-font;
+    }
+  }
+  .tool {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    span:first-child {
+      margin-bottom: 1.3rem;
+      text-transform: uppercase;
+      @include poppin-font;
+    }
+  }
+}
+
+// fonts sizes
+
+@media only screen and (min-width: 320px) {
+  .lang .back .front .tool {
+    span:first-child {
+      font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+    }
+    span:last-child {
+      font-size: calc(0.7rem + 0.5 * ((100vw - 20rem) / 60));
+    }
+  }
+  .skill__head {
+    span {
+      font-size: calc(1.2rem + 0.5 * ((100vw - 20rem) / 60));
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .lang .back .front .tool {
+    span:first-child {
+      font-size: 4rem;
+    }
+  }
+  span:last-child {
+    font-size: 1.2rem;
+  }
+  .skill__head {
+    span {
+      font-size: 2rem;
     }
   }
 }

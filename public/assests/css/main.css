@@ -11058,6 +11058,10 @@ a:active {
   flex-wrap: wrap;
 }
 
+li {
+  list-style: none;
+}
+
 .carosuel {
   position: relative;
   width: 80%;
@@ -11197,10 +11201,17 @@ a:active {
     margin-top: 1.25rem;
   }
 }
+.skill {
+  color: white !important;
+  text-align: center;
+}
+.skill .skill__head {
+  text-align: left;
+  padding-bottom: 5rem;
+}
 .skill .skill__head span {
   margin-top: 0.1rem;
   color: white !important;
-  font-size: calc(1.3rem + 0.8 * ((100vw - 60rem) / 60));
   text-transform: uppercase;
 }
 .skill .flex {
@@ -11210,7 +11221,68 @@ a:active {
 .skill .tool .flex {
   gap: 15px;
 }
+.skill .lang {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.skill .lang span:first-child {
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.skill .front {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.skill .front span:first-child {
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.skill .back {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.skill .back span:first-child {
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.skill .tool {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.skill .tool span:first-child {
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
 
+@media only screen and (min-width: 320px) {
+  .lang .back .front .tool span:first-child {
+    font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+  .lang .back .front .tool span:last-child {
+    font-size: calc(0.7rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+
+  .skill__head span {
+    font-size: calc(1.2rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .lang .back .front .tool span:first-child {
+    font-size: 4rem;
+  }
+
+  span:last-child {
+    font-size: 1.2rem;
+  }
+
+  .skill__head span {
+    font-size: 2rem;
+  }
+}
 .names p {
   position: relative;
   width: max-content;
