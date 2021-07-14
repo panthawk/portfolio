@@ -10,6 +10,7 @@
 @use './layouts/carosuel';
 @use './layouts/aboutme';
 @use './layouts/skillme';
+@use './layouts/portfolio';
 
 // abstracts
 
@@ -26,3 +27,4 @@
 
 @use './pages/about';
 @use './pages/skill';
+@use './pages/port';

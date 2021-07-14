@@ -68,8 +68,10 @@
       text-transform: uppercase;
       @include poppin-font;
     }
-    ul > li {
-      padding: 0.2rem;
+    ul {
+      li:first-child {
+        margin-right: 0.1rem;
+      }
     }
   }
 }

@@ -1,0 +1,48 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.projects--resize {
+  color: $text-color;
+  .projects__head {
+    span {
+      margin-top: 0.1rem;
+      color: $text-color;
+      text-transform: uppercase;
+    }
+  }
+
+  .projects__text {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 90%;
+    @include para-font;
+  }
+
+  .carosuel {
+    margin-top: 2rem;
+  }
+
+  .carosuel--tools {
+    ul > li {
+      padding: 0 0.4rem;
+    }
+    .line {
+      border: 2px solid #00ff0a;
+      border-radius: 5px;
+    }
+  }
+
+  .desc--head {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .desc {
+    margin-top: 0.4rem;
+    p {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
