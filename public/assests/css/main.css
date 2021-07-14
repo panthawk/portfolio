@@ -11350,6 +11350,36 @@ li {
   text-align: center;
 }
 
+@media only screen and (min-width: 320px) {
+  .projects__head span {
+    font-size: calc(1.2rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+}
+.contact--resize {
+  color: white !important;
+}
+.contact--resize p:nth-child(1) {
+  text-transform: uppercase;
+}
+.contact--resize p:nth-child(2) {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact--resize ul li {
+  margin: 1rem;
+}
+.contact--resize ul li img {
+  width: 40px;
+}
+
+.end img {
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
 .names .one {
   position: relative;
   width: max-content;
@@ -11411,6 +11441,10 @@ li {
 .projects {
   margin: 0 auto;
   margin-top: 10rem;
+}
+
+.contact {
+  margin-top: 8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

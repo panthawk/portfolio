@@ -11,6 +11,7 @@
 @use './layouts/aboutme';
 @use './layouts/skillme';
 @use './layouts/portfolio';
+@use './layouts/contactMe';
 
 // abstracts
 
@@ -28,3 +29,4 @@
 @use './pages/about';
 @use './pages/skill';
 @use './pages/port';
+@use './pages/contact';

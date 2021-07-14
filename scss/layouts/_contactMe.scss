@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.contact--resize {
+  color: $text-color;
+  p:nth-child(1) {
+    text-transform: uppercase;
+  }
+  p:nth-child(2) {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  ul {
+    li {
+      margin: 1rem;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.end {
+  img {
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+}
