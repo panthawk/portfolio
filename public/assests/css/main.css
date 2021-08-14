@@ -11380,32 +11380,42 @@ li {
   padding-bottom: 3rem;
 }
 
-.names .one {
-  position: relative;
-  width: max-content;
-}
-.names .one::after, .names .one::before {
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-}
-.names .one::before {
-  background: #131419;
-  animation: type 4s steps(5) 1s forwards;
-}
-.names .one::after {
-  content: "";
-  width: 0.1rem;
-  background: white;
-  animation: type 4s steps(5) 1s forwards, blink 750ms steps(5) infinite;
-}
-.names .two {
-  opacity: 0;
-  transform: translateY(3rem);
-  animation: fade 2s ease 7s forwards;
+/* @use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+//name itro animation
+
+.names {
+  .one {
+    position: relative;
+    width: max-content;
+    &::after,
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    &::before {
+      background: #131419;
+      animation: type 4s steps(5) 1s forwards;
+    }
+
+    &::after {
+      content: "";
+      width: 0.1rem;
+      background: white;
+      animation: type 4s steps(5) 1s forwards, blink 750ms steps(5) infinite;
+    }
+  }
+  .two {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fade 2s ease 7s forwards;
+  }
 }
 
 @keyframes type {
@@ -11413,17 +11423,26 @@ li {
     left: 100%;
   }
 }
+
 @keyframes blink {
   to {
     background: transparent;
   }
 }
+
 @keyframes fade {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 992px) {
+  .two {
+    animation-name: none;
+  }
+}
+ */
 .about--me {
   margin: 0;
   margin-top: 8rem;
